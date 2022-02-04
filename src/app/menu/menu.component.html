@@ -1,0 +1,10 @@
+<p>Aquí será el menu: {{nombre}}</p>
+<h1>Aquí será el menu: {{alumno.nombre}} {{alumno.apellido}}</h1>
+
+<img [src]="img" id="im">
+
+<input type="text" [(ngModel)]="valor">
+<p>{{valor}}</p>
+<br>
+
+<input type="email" [(ngModel)]="email" (ngModelChange)="mostrar()" (focus)="back($event)">
