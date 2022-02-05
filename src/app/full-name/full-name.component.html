@@ -1,0 +1,5 @@
+<div class="input-group mb-3 contenedor">
+    <span class="input-group-text" id="inputGroup-sizing-default">Nombre del país</span>
+    <input type="text" class="form-control" [(ngModel)]="query">
+</div>
+<app-resultado [query]="query" [type]="type"></app-resultado>

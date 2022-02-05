@@ -1,0 +1,17 @@
+<div class="contenedor">
+    <input type="radio" class="btn-check" name="options" id="africa" autocomplete="off" [(ngModel)]="query" value="Africa">
+    <label class="btn btn-secondary" for="africa">Africa</label>
+
+    <input type="radio" class="btn-check" name="options" id="america" autocomplete="off" [(ngModel)]="query" value="Americas">
+    <label class="btn btn-secondary" for="america">America</label>
+
+    <input type="radio" class="btn-check" name="options" id="asia" autocomplete="off" [(ngModel)]="query" value="Asia">
+    <label class="btn btn-secondary" for="asia">Asia</label>
+
+    <input type="radio" class="btn-check" name="options" id="europe" autocomplete="off" [(ngModel)]="query" value="Europe"> 
+    <label class="btn btn-secondary" for="europe">Europa</label>
+
+    <input type="radio" class="btn-check" name="options" id="oceania" autocomplete="off" [(ngModel)]="query" value="Oceania">
+    <label class="btn btn-secondary" for="oceania">Oceania</label>
+</div>
+<app-resultado [query]="query" [type]="type"></app-resultado>

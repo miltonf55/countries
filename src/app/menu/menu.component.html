@@ -1,10 +1,12 @@
-<p>Aquí será el menu: {{nombre}}</p>
-<h1>Aquí será el menu: {{alumno.nombre}} {{alumno.apellido}}</h1>
-
-<img [src]="img" id="im">
-
-<input type="text" [(ngModel)]="valor">
-<p>{{valor}}</p>
-<br>
-
-<input type="email" [(ngModel)]="email" (ngModelChange)="mostrar()" (focus)="back($event)">
+<ul class="nav nav-tabs" >
+    <h2 id="countriesTitle">Countries</h2>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true }">Busqueda por nombre del país</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/currency" routerLinkActive="active">Busqueda por divisa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/region" routerLinkActive="active">Bisqueda por región</a>
+    </li>
+</ul>

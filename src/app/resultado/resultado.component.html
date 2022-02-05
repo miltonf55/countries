@@ -1,0 +1,27 @@
+<div class="resultados">
+    <table class="table table-striped table-hover" *ngIf="qv; else elseBlock">
+        <thead>
+            <tr>
+              <th scope="col">Bandera</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Capital</th>
+              <th scope="col">Idiomas</th>
+              <th scope="col">Región</th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr *ngFor="let countrie of listC; index as i" (click)="mostrarPais(countrie)">
+              <th scope="row"><img [src]="this.listC[i].flags.png"></th>
+              <td>{{countrie.name.common}}</td>
+              <td>{{countrie.capital}}</td>
+              <td>{{lenguages[i]}}</td>
+              <td>{{countrie.region}}</td>
+            </tr>
+          </tbody>
+    </table>
+    <ng-template #elseBlock>
+        <div class="alert alert-warning" role="alert" id="warn">
+            Ningun coincidencia encontrada
+        </div>
+    </ng-template>
+</div>

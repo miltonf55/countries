@@ -1,0 +1,19 @@
+.resultados{
+    height: 80vh;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 1.5vh;
+    border-style: solid;
+    border-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+#warn{
+    width: 100%;
+    text-align: center;
+}
+img{
+    width: 30%;
+}

@@ -1,0 +1,25 @@
+<p>Aquí será el menu: {{nombre}}</p>
+<h1>Aquí será el menu: {{alumno.nombre}} {{alumno.apellido}}</h1>
+
+
+
+<input type="text" [(ngModel)]="valor">
+<p>{{valor}}</p>
+<br>
+
+<input type="email" [(ngModel)]="email" (ngModelChange)="mostrar()" (focus)="back($event)">
+
+<img [src]="img" id="im" *ngIf="!   cargando">
+<img src="https://c.tenor.com/tEBoZu1ISJ8AAAAC/spinning-loading.gif" *ngIf="cargando">
+
+<br>
+
+<div *ngFor="let vid of listV">
+    <p>El nombre es: {{vid.nom}}</p>
+    <p>El tiempo es: {{vid.time | date}}</p>
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>

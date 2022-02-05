@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-top: 5vh;
+}
+.contenedor{
+    margin-left: 10vh;
+    width: 75%;
+}
